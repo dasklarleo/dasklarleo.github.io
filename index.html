@@ -95,22 +95,18 @@
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/21/hello-world/" data-id="cklexe9x00000pu3egy7w4a21" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/02/21/hello-world/" data-id="cklf0l3oq0000bu3e5dlw5dik" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -155,12 +151,14 @@
 <p>假设PUSH执行的次数是t，那么很明显POP执行的次数必定小于等于t，而且$t\leq n$，因此总的时间复杂度就是$\theta(n)$，平均每个操作的时间复杂度就是$\frac {\theta (n)} n=\theta(1)$，注意：我们在进行分析的时候并没有使用概率的一些知识，这就是我们得到的摊还代价。</p>
 <h3 id="二进制计数器"><a href="#二进制计数器" class="headerlink" title="二进制计数器"></a>二进制计数器</h3><p>设计一个二进制计数器，二进制使用一个数组$A$来进行表示，然后执行下面的程序多次</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Increcement(A)&#123;</span><br><span class="line">	i=<span class="number">0</span></span><br><span class="line">	<span class="keyword">while</span>(i&lt;=A.length <span class="keyword">and</span> A[i]==<span class="number">1</span>)</span><br><span class="line">		A[i]=<span class="number">0</span></span><br><span class="line">		i=i+<span class="number">1</span></span><br><span class="line">	<span class="keyword">if</span> i&lt;A.length</span><br><span class="line">		A[i]=<span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>![二进制计数器](../img/截屏2021-02-05 上午9.23.14.png)</p>
-<p>如果要将一个二进制数加$n$的话，那么就需要执行$n$次$Increcement$函数，每次执行的时候由于第i位对应的二进制数每隔$2^i$才会反转一次（因为需要$2^i$之前的数加满了才会进位）那么对于n次调用，总的执行时间的复杂度就是：<br>$$<br>\sum_{i=0}^n{\frac n {2^i}}=n·\sum_{i=0}^n{\frac 1 {2^i}}=2n(\lim \limits_{n \to \infty})<br>$$<br>所以摊还代价就是$\theta(\frac {O(n)}n)=\theta(1)$</p>
+<p><img src="../img/截屏2021-02-05 上午9.23.14.png" alt="二进制计数器"></p>
+<p>如果要将一个二进制数加$n$的话，那么就需要执行$n$次$Increcement$函数，每次执行的时候由于第i位对应的二进制数每隔$2^i$才会反转一次（因为需要$2^i$之前的数加满了才会进位）那么对于n次调用，总的执行时间的复杂度就是：</p>
+<script type="math/tex; mode=display">
+\sum_{i=0}^n{\frac n {2^i}}=n·\sum_{i=0}^n{\frac 1 {2^i}}=2n(\lim \limits_{n \to \infty})</script><p>所以摊还代价就是$\theta(\frac {O(n)}n)=\theta(1)$</p>
 <h2 id="核算分析"><a href="#核算分析" class="headerlink" title="核算分析"></a>核算分析</h2><p>核算分析的主要原理就是为后来打算，每次进行操作的时候都要为之后的操作存钱，未来的操作不能进行透支</p>
-<p>我们为每一种操作定义摊还代价，当摊还代价$\ge$实际代价的时候我们就可以将差值作为存款存下来，为了将来着想，那么就必须满足下面的关系<br>$$<br>\sum_{i=1}^n{\hat c_i} \ge \sum_{i=1}^n{ c_i}<br>$$</p>
-<h3 id="栈操作-1"><a href="#栈操作-1" class="headerlink" title="栈操作"></a>栈操作</h3><p>还是以栈操作为例：</p>
+<p>我们为每一种操作定义摊还代价，当摊还代价$\ge$实际代价的时候我们就可以将差值作为存款存下来，为了将来着想，那么就必须满足下面的关系</p>
+<script type="math/tex; mode=display">
+\sum_{i=1}^n{\hat c_i} \ge \sum_{i=1}^n{ c_i}</script><h3 id="栈操作-1"><a href="#栈操作-1" class="headerlink" title="栈操作"></a>栈操作</h3><p>还是以栈操作为例：</p>
 <p>栈操作的每个步骤的实际代价如下所示：</p>
 <ul>
 <li>PUSH(S,x)：1</li>
@@ -176,7 +174,9 @@
 <p>之所以这么定义是因为，对于POP或者MULTIPOP(S,k)操作都需要之前的POP为其存入数据，也就是说有多少个POP就至少有几个PUSH。那么理所应当的，PUSH应该为POP和MULTIPOP攒钱，一个PUSH对应一个POP就可以</p>
 <p>因此总的摊还代价为$\theta (n)$，也为实际代价的上界，因此平均实际代价就是$\theta(1)$</p>
 <h3 id="二进制计数器-1"><a href="#二进制计数器-1" class="headerlink" title="二进制计数器"></a>二进制计数器</h3><p>二进制每次置1操作都应该为以后的置0操作攒钱，那么置1操作的摊还代价就应该是2，置0操作只需要从之前攒的钱拿钱，那么其摊还代价直接为0就可以</p>
-<p>因此我们可以得出<br>$$<br>\sum_{i=1}^n{\hat c_i}=\theta(n)<br>$$<br>那么平均的时间复杂度就是$\theta(1)$</p>
+<p>因此我们可以得出</p>
+<script type="math/tex; mode=display">
+\sum_{i=1}^n{\hat c_i}=\theta(n)</script><p>那么平均的时间复杂度就是$\theta(1)$</p>
 <h2 id="势能法"><a href="#势能法" class="headerlink" title="势能法"></a>势能法</h2><p>势能法的关键是定义势能函数，势能和之前的钱类似，都是攒下来应对以后操作的，但是势能差可以为负数，表示某个操作少付费了</p>
 <p>一般需要定义下面的几个量：</p>
 <ul>
@@ -185,27 +185,57 @@
 <li>$c_i$：第i个操作的代价</li>
 <li>$D_i$：第i个数据结构</li>
 </ul>
-<p>他们的关系为以下：<br>$$<br>\hat c_i=c_i+\phi(D_i)-\phi(D_{i-1})<br>$$<br>根据裂项相消可以得出：<br>$$<br>\sum_{i=1}^n{\hat c_i}=\sum_{i=1}^n c_i+\phi(D_i)-\phi(D_0)<br>$$<br>一般假设$\phi(D_0)=0,\phi(D_i)$</p>
+<p>他们的关系为以下：</p>
+<script type="math/tex; mode=display">
+\hat c_i=c_i+\phi(D_i)-\phi(D_{i-1})</script><p>根据裂项相消可以得出：</p>
+<script type="math/tex; mode=display">
+\sum_{i=1}^n{\hat c_i}=\sum_{i=1}^n c_i+\phi(D_i)-\phi(D_0)</script><p>一般假设$\phi(D_0)=0,\phi(D_i)$</p>
 <h3 id="栈操作-2"><a href="#栈操作-2" class="headerlink" title="栈操作"></a>栈操作</h3><p>我们将栈内的元素作为势，那么就可以得出：</p>
 <p>每次PUSH操作的势能差为1</p>
-<p>PUSH的摊还代价就是：$\hat c_i=c_i+\phi(D_i)-\phi(D_{i-1})=1+1=2$</p>
-<p>POP就是：$\hat c_i=c_i+\phi(D_i)-\phi(D_{i-1})=1-1=0$</p>
+<p>PUSH的摊还代价就是：$\hat c<em>i=c_i+\phi(D_i)-\phi(D</em>{i-1})=1+1=2$</p>
+<p>POP就是：$\hat c<em>i=c_i+\phi(D_i)-\phi(D</em>{i-1})=1-1=0$</p>
 <p>同理MULTIPOP也是0</p>
 <h2 id="动态表"><a href="#动态表" class="headerlink" title="动态表"></a>动态表</h2><h3 id="表扩张"><a href="#表扩张" class="headerlink" title="表扩张"></a>表扩张</h3><p>伪代码如下所示</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">TABLE-INCREASE</span><br><span class="line">if T.size&#x3D;&#x3D;0</span><br><span class="line">	alloct 1 slot</span><br><span class="line">if T.sum&#x3D;&#x3D;T.size</span><br><span class="line">	allocate new table with 2 size</span><br><span class="line">  insert all items in prev table</span><br><span class="line">  free prev T</span><br><span class="line">  T&#x3D;new Table</span><br><span class="line">  T.size&#x3D;2*prev.size</span><br><span class="line">inert x into x</span><br><span class="line">T.num++</span><br></pre></td></tr></table></figure>
-
-<p>每次操作的时间复杂度<br>$$<br>f(x)=<br>\begin{cases}<br>i&amp; \text{i-1为2的幂}\<br>1&amp; \text{else}<br>\end{cases}<br>$$<br>通过聚合分析法我们可以得出总的时间复杂度为$\theta(3n)=\theta(n)$</p>
+<p>每次操作的时间复杂度</p>
+<script type="math/tex; mode=display">
+f(x)=
+\begin{cases}
+i& \text{i-1为2的幂}\\
+1& \text{else}
+\end{cases}</script><p>通过聚合分析法我们可以得出总的时间复杂度为$\theta(3n)=\theta(n)$</p>
 <p>如果是核算分析法的话我们可以得出：每次insert时的摊还代价应该补偿其本身的代价、表扩张时移入另一个表的代价、移动已经移动过的代价，因此为3</p>
 <p>势能分析：</p>
 <p>定义$\phi$函数：$\phi=2·T.sum-T.size$</p>
-<p>因此：<br>$$<br>\begin{aligned}<br>\widehat{c}<em>{i} &amp;=c</em>{i}+\Phi_{i}-\Phi_{i-1} \<br>&amp;=n u m_{i}+\left(2 \cdot n u m_{i}-\text { size }<em>{i}\right)-\left(2 \cdot n u m</em>{i-1}-\text { size }<em>{i-1}\right) \<br>&amp;=n u m</em>{i}+\left(2 \cdot n u m_{i}-2 \cdot\left(n u m_{i}-1\right)\right)-\left(2\left(n u m_{i}-1\right)-\left(n u m_{i}-1\right)\right) \<br>&amp;=n u m_{i}+2-\left(n u m_{i}-1\right) \<br>&amp;=3<br>\end{aligned}<br>$$</p>
-<h3 id="表缩减"><a href="#表缩减" class="headerlink" title="表缩减"></a>表缩减</h3><p>$$<br>\begin{aligned}<br>\widehat{c}<em>{i} &amp;=c</em>{i}+\Phi_{i}-\Phi_{i-1} \<br>&amp;=1+\left(\text { size }<em>{i} / 2-n u m</em>{i}\right)-\left(\text { size }<em>{i-1} / 2-n u m</em>{i-1}\right) \<br>&amp;=1+\left(\text { size }<em>{i} / 2-n u m</em>{i}\right)-\left(\text { size }<em>{i} / 2-\left(n u m</em>{i}-1\right)\right) \<br>&amp;=0<br>\end{aligned}<br>$$</p>
-<p>If $\alpha_{i-1}&lt;1 / 2$ but $\alpha_{i} \geq 1 / 2,$ then<br>$$<br>\begin{aligned}<br>\widehat{c}<em>{i} &amp;=c</em>{i}+\Phi_{i}-\Phi_{i-1} \<br>&amp;=1+\left(2 \cdot n u m_{i}-\text { size }<em>{i}\right)-\left(\text { size }</em>{i-1} / 2-n u m_{i-1}\right) \<br>&amp;=1+\left(2\left(\text { num }<em>{i-1}+1\right)-\text { size }</em>{i-1}\right)-\left(\text { size }<em>{i-1} / 2-n u m</em>{i-1}\right) \<br>&amp;=3 \cdot \text { num }<em>{i-1}-\frac{3}{2} \text { size }</em>{i-1}+3 \<br>&amp;=3 \alpha_{i-1} \text { size }<em>{i-1}-\frac{3}{2} \text { size }</em>{i-1}+3 \<br>&amp;&lt;\frac{3}{2} \text { size }<em>{i-1}-\frac{3}{2} \text { size }</em>{i-1}+3 \<br>&amp;=3<br>\end{aligned}<br>$$</p>
-
+<p>因此：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\widehat{c}_{i} &=c_{i}+\Phi_{i}-\Phi_{i-1} \\
+&=n u m_{i}+\left(2 \cdot n u m_{i}-\text { size }_{i}\right)-\left(2 \cdot n u m_{i-1}-\text { size }_{i-1}\right) \\
+&=n u m_{i}+\left(2 \cdot n u m_{i}-2 \cdot\left(n u m_{i}-1\right)\right)-\left(2\left(n u m_{i}-1\right)-\left(n u m_{i}-1\right)\right) \\
+&=n u m_{i}+2-\left(n u m_{i}-1\right) \\
+&=3
+\end{aligned}</script><h3 id="表缩减"><a href="#表缩减" class="headerlink" title="表缩减"></a>表缩减</h3><script type="math/tex; mode=display">
+\begin{aligned}
+\widehat{c}_{i} &=c_{i}+\Phi_{i}-\Phi_{i-1} \\
+&=1+\left(\text { size }_{i} / 2-n u m_{i}\right)-\left(\text { size }_{i-1} / 2-n u m_{i-1}\right) \\
+&=1+\left(\text { size }_{i} / 2-n u m_{i}\right)-\left(\text { size }_{i} / 2-\left(n u m_{i}-1\right)\right) \\
+&=0
+\end{aligned}</script><p>If $\alpha<em>{i-1}&lt;1 / 2$ but $\alpha</em>{i} \geq 1 / 2,$ then</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\widehat{c}_{i} &=c_{i}+\Phi_{i}-\Phi_{i-1} \\
+&=1+\left(2 \cdot n u m_{i}-\text { size }_{i}\right)-\left(\text { size }_{i-1} / 2-n u m_{i-1}\right) \\
+&=1+\left(2\left(\text { num }_{i-1}+1\right)-\text { size }_{i-1}\right)-\left(\text { size }_{i-1} / 2-n u m_{i-1}\right) \\
+&=3 \cdot \text { num }_{i-1}-\frac{3}{2} \text { size }_{i-1}+3 \\
+&=3 \alpha_{i-1} \text { size }_{i-1}-\frac{3}{2} \text { size }_{i-1}+3 \\
+&<\frac{3}{2} \text { size }_{i-1}-\frac{3}{2} \text { size }_{i-1}+3 \\
+&=3
+\end{aligned}</script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2019/10/11/algorithm/" data-id="cklf0f6vc0000po3e7lxaa1di" data-title="摊还分析" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2019/10/11/algorithm/" data-id="cklf0l3ox0001bu3e31lt9hd2" data-title="摊还分析" class="article-share-link">Share</a>
       
       
       
