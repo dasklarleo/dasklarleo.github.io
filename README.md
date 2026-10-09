@@ -48,7 +48,7 @@ Bibliographic metadata for the four first-author papers was checked against Cros
 - https://arxiv.org/abs/2304.01097
 - https://github.com/xionghonglin/DoctorGLM
 
-DoctorGLM uses the author list shown by arXiv, including Linlin Huang; the repository README’s shorter BibTeX entry differs. Paper descriptions are original summaries, not copied abstracts. The three research illustrations are original conceptual diagrams, not experimental results. Conference award names are descriptive English translations of the names supplied by the owner.
+DoctorGLM uses the author list shown by arXiv, including Linlin Huang; the repository README’s shorter BibTeX entry differs. Paper descriptions are original summaries, not copied abstracts. Research illustrations are extracted framework figures from the owner’s TMI (Figure 1), MedIA (Figure 2), MICCAI (Figure 1), and DoctorGLM (Figure 1) papers. Captions link to the corresponding publications. Only figure regions, without manuscript body text, are included. Conference award names are descriptive English translations of the names supplied by the owner.
 
 Optional additions awaiting the owner: supervisor and laboratory, UCL host, individual publication code repositories, and additional publications. These have not been guessed or displayed as placeholders.
 
