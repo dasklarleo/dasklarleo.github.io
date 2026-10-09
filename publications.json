@@ -1,0 +1,115 @@
+[
+  {
+    "id": "liu2026hierarchical",
+    "doi": "10.1016/j.media.2026.104063",
+    "year": 2026,
+    "venue": "MedIA",
+    "type": "journal",
+    "summary": "A framework that combines hierarchical prompts and disease-specific prototypes to classify brain disorders at multiple diagnostic levels. Evaluated on 54,360 subjects across six multi-center datasets, this work studies how structured diagnostic knowledge can guide image representation learning.",
+    "topic": "Hierarchical learning · Brain disorders",
+    "link": "https://pubmed.ncbi.nlm.nih.gov/42013614/",
+    "title": "A hierarchical prompt and prototype learning framework for brain disorder classification",
+    "authors": [
+      "Yuxiao Liu",
+      "Kaicong Sun",
+      "Yaping Wu",
+      "Xin Lin",
+      "Yan Bai",
+      "Long Yang",
+      "Weilin Zhou",
+      "Haoyue Yuan",
+      "Xintong Wu",
+      "Yichu He",
+      "Qingxia Wu",
+      "Zengyang Che",
+      "Yiqiang Zhan",
+      "Sean Zhou",
+      "Dijia Wu",
+      "Feng Shi",
+      "Meiyun Wang",
+      "Dinggang Shen"
+    ],
+    "url": "https://doi.org/10.1016/j.media.2026.104063",
+    "bibtex": "@article{liu2026hierarchical,\n  title = {A hierarchical prompt and prototype learning framework for brain disorder classification},\n  author = {Liu, Yuxiao and Sun, Kaicong and Wu, Yaping and Lin, Xin and Bai, Yan and Yang, Long and Zhou, Weilin and Yuan, Haoyue and Wu, Xintong and He, Yichu and Wu, Qingxia and Che, Zengyang and Zhan, Yiqiang and Zhou, Sean and Wu, Dijia and Shi, Feng and Wang, Meiyun and Shen, Dinggang},\n  journal = {Medical Image Analysis},\n  year = {2026},\n  volume = {112},\n  pages = {104063},\n  doi = {10.1016/j.media.2026.104063}\n}"
+  },
+  {
+    "id": "liu2025amyloid",
+    "doi": "10.1109/TMI.2024.3525022",
+    "year": 2025,
+    "venue": "IEEE TMI",
+    "type": "journal",
+    "summary": "A framework for predicting amyloid-β deposition from functional MRI, combining representations from a pretrained language model with task-oriented brain network learning. The study connects functional connectivity with a pathology-related target in Alzheimer’s disease research.",
+    "topic": "Alzheimer’s disease · Brain networks · LLMs",
+    "title": "Amyloid-β Deposition Prediction With Large Language Model Driven and Task-Oriented Learning of Brain Functional Networks",
+    "authors": [
+      "Yuxiao Liu",
+      "Mianxin Liu",
+      "Yuanwang Zhang",
+      "Yihui Guan",
+      "Qihao Guo",
+      "Fang Xie",
+      "Dinggang Shen"
+    ],
+    "url": "https://doi.org/10.1109/TMI.2024.3525022",
+    "bibtex": "@article{liu2025amyloid,\n  title = {Amyloid-β Deposition Prediction With Large Language Model Driven and Task-Oriented Learning of Brain Functional Networks},\n  author = {Liu, Yuxiao and Liu, Mianxin and Zhang, Yuanwang and Guan, Yihui and Guo, Qihao and Xie, Fang and Shen, Dinggang},\n  journal = {IEEE Transactions on Medical Imaging},\n  year = {2025},\n  volume = {44},\n  number = {4},\n  pages = {1809--1820},\n  doi = {10.1109/TMI.2024.3525022}\n}"
+  },
+  {
+    "id": "liu2023meta",
+    "doi": "10.1007/978-3-031-43993-3_10",
+    "year": 2023,
+    "venue": "MICCAI",
+    "type": "conference",
+    "summary": "An adaptive graph meta-learner that transfers connectivity-based models to new brain disorder tasks with limited training data. Evaluation on 4,114 fMRI samples examines how shared connectivity representations can support adaptation across disease datasets.",
+    "topic": "Graph learning · Few-shot adaptation",
+    "title": "Development and Fast Transferring of General Connectivity-Based Diagnosis Model to New Brain Disorders with Adaptive Graph Meta-Learner",
+    "authors": [
+      "Yuxiao Liu",
+      "Mianxin Liu",
+      "Yuanwang Zhang",
+      "Dinggang Shen"
+    ],
+    "url": "https://doi.org/10.1007/978-3-031-43993-3_10",
+    "bibtex": "@inproceedings{liu2023meta,\n  title = {Development and Fast Transferring of General Connectivity-Based Diagnosis Model to New Brain Disorders with Adaptive Graph Meta-Learner},\n  author = {Liu, Yuxiao and Liu, Mianxin and Zhang, Yuanwang and Shen, Dinggang},\n  booktitle = {Medical Image Computing and Computer Assisted Intervention – MICCAI 2023},\n  year = {2023},\n  pages = {99--108},\n  doi = {10.1007/978-3-031-43993-3_10}\n}"
+  },
+  {
+    "id": "liu2023hierarchical",
+    "doi": "10.1109/ISBI53787.2023.10230532",
+    "year": 2023,
+    "venue": "ISBI",
+    "type": "conference",
+    "summary": "Joint learning of disease-related low- and high-order functional connectivity networks from resting-state fMRI. Graph attention captures interactions beyond pairs of brain regions, supporting the identification of mild cognitive impairment.",
+    "topic": "Functional connectivity · MCI · Graph attention",
+    "talk": "https://rc.signalprocessingsociety.org/conferences/isbi-2023/spsisbi23vid0259",
+    "title": "Learning Hierarchical-Order Functional Connectivity Networks for Mild Cognitive Impairment Diagnosis",
+    "authors": [
+      "Yuxiao Liu",
+      "Mianxin Liu",
+      "Yuanwang Zhang",
+      "Dinggang Shen"
+    ],
+    "url": "https://doi.org/10.1109/ISBI53787.2023.10230532",
+    "bibtex": "@inproceedings{liu2023hierarchical,\n  title = {Learning Hierarchical-Order Functional Connectivity Networks for Mild Cognitive Impairment Diagnosis},\n  author = {Liu, Yuxiao and Liu, Mianxin and Zhang, Yuanwang and Shen, Dinggang},\n  booktitle = {2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI)},\n  year = {2023},\n  pages = {1--5},\n  doi = {10.1109/ISBI53787.2023.10230532}\n}"
+  },
+  {
+    "id": "xiong2023doctorglm",
+    "year": 2023,
+    "venue": "arXiv",
+    "type": "preprint",
+    "title": "DoctorGLM: Fine-tuning your Chinese Doctor is not a Herculean Task",
+    "authors": [
+      "Honglin Xiong",
+      "Sheng Wang",
+      "Yitao Zhu",
+      "Zihao Zhao",
+      "Yuxiao Liu",
+      "Linlin Huang",
+      "Qian Wang",
+      "Dinggang Shen"
+    ],
+    "url": "https://arxiv.org/abs/2304.01097",
+    "summary": "An open-source effort to adapt ChatGLM-6B to Chinese medical dialogue. I contributed to model training in this early exploration of accessible, healthcare-focused language models.",
+    "topic": "Medical language models · Open source",
+    "code": "https://github.com/xionghonglin/DoctorGLM",
+    "bibtex": "@article{xiong2023doctorglm,\n  title = {DoctorGLM: Fine-tuning your Chinese Doctor is not a Herculean Task},\n  author = {Xiong, Honglin and Wang, Sheng and Zhu, Yitao and Zhao, Zihao and Liu, Yuxiao and Huang, Linlin and Wang, Qian and Shen, Dinggang},\n  journal = {arXiv preprint arXiv:2304.01097},\n  year = {2023},\n  url = {https://arxiv.org/abs/2304.01097}\n}"
+  }
+]
