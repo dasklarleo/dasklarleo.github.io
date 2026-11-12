@@ -32,7 +32,9 @@ The existing Hexo articles and archives in `2019/`, `2021/`, and `archives/`, to
 - `publications.json`: structured publication metadata for reuse. The rendered publication entries and the `citation-data` blocks in the HTML pages must be updated alongside this file.
 - `assets/portrait.png`: the portrait provided by the site owner.
 
-The page displays the owner’s academic email and portrait. It does not display a phone number, birth date, home address, student number or job-application documents. No unrelated private workspace files are included.
+Maintain the static files in this directory directly, keeping `publications.json`, `publications.bib`, the publication cards, the CV list, and all six HTML `citation-data` blocks in sync. The historical `build.py` and `restyle.py` in the parent directory contain older content and must not be rerun against this site.
+
+The page displays the owner’s academic email and portrait. It does not display a phone number, birth date, home address, student number or job-application documents. No manuscripts, acceptance emails, or unrelated private workspace files are included.
 
 ## Content provenance
 
@@ -50,6 +52,13 @@ Bibliographic metadata for the four first-author papers was checked against Cros
 
 DoctorGLM uses the author list shown by arXiv, including Linlin Huang; the repository README’s shorter BibTeX entry differs. Paper descriptions are original summaries, not copied abstracts. Research illustrations are extracted framework figures from the owner’s TMI (Figure 1), MedIA (Figure 2), MICCAI (Figure 1), and DoctorGLM (Figure 1) papers. Captions link to the corresponding publications. Only figure regions, without manuscript body text, are included. Conference award names are descriptive English translations of the names supplied by the owner.
 
+The two accepted 2026 papers were added using metadata and acceptance information supplied by the owner, with public links checked on 12 November 2026:
+
+- **IEEE TPAMI:** “Toward a Multi-View Brain Network Foundation Model: Cross-View Consistency Learning Across Arbitrary Atlases.” Accepted 13 September 2026; Yuxiao Liu is the fourth author. The [DOI](https://doi.org/10.1109/TPAMI.2026.3736359) resolves to IEEE document 11701538, and the [preprint](https://arxiv.org/abs/2603.20348) supplies a public manuscript reference.
+- **IEEE TMI:** “Cross-modality Knowledge Transfer Between fMRI and EEG for Improved Single-modality Alzheimer’s Disease Diagnosis.” Accepted in 2026; the acceptance month and day are not recorded here. Xin Lin, Yuxiao Liu, and Wenfei Yu share first authorship. The [official code repository](https://github.com/yizhixiaolinya/Code-TMI2026_fMRI-EEG) is linked; no verified public paper URL or DOI was available when this update was prepared.
+
+Both entries are explicitly marked accepted, with no unverified volume, issue, or page numbers. The private acceptance records used for verification are not published.
+
 Optional additions awaiting the owner: supervisor and laboratory, UCL host, individual publication code repositories, and additional publications. These have not been guessed or displayed as placeholders.
 
-Content verified and prepared on 9 October 2026.
+Content verified and prepared on 12 November 2026.
