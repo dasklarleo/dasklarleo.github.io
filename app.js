@@ -21,7 +21,7 @@ function filterPublications(){
     const matches=(category==='all'||paper.dataset.type===category) && paper.textContent.toLowerCase().includes(query);
     paper.hidden=!matches;if(matches)count++;
   });
-  $('#publication-count').textContent=`${count} of ${papers.length} selected publications`;
+  $('#publication-count').textContent=`${count} of ${papers.length} publications`;
   $('#no-results').hidden=count!==0;
 }
 $$('.filter').forEach(button=>button.addEventListener('click',()=>{

@@ -59,6 +59,12 @@ The two accepted 2026 papers were added using metadata and acceptance informatio
 
 Both entries are explicitly marked accepted, with no unverified volume, issue, or page numbers. The private acceptance records used for verification are not published.
 
+The [Google Scholar profile](https://scholar.google.com/citations?user=CFBirUoAAAAJ&hl=en) was reconciled against all 20 listed works on 12 November 2026. Fifteen missing works were added to the existing seven, giving 22 publication entries. The TPAMI and TMI acceptances and the published MedIA paper retain their more current verified status even where Scholar shows an older version or has not listed the work. Full author order and contribution marks were checked against publisher records, official conference pages, and author manuscripts; `sources` in `publications.json` contains public verification links.
+
+Each work appears once. Published journal or proceedings versions take priority over their preprints, with preprint links retained where available. In particular, ChatRadio-Valuer uses the final IEEE TBME 2026 article, the CLIP survey uses MedIA 2025, and the progressive diagnosis paper uses its MLCN proceedings version. “Evaluating Large Language Models for Radiology Natural Language Processing” remains a preprint. The distinct CMD-AD MICCAI paper and its differently titled TMI extension remain separate entries.
+
+Conference entries are ordered and displayed by `conference_year`; `publication_year` records the publisher's formal proceedings year when verified. When those years differ, cards and CV entries show both, and BibTeX follows the publisher export. Thus some MICCAI 2026 papers have 2027 in their final Springer citation. MLCN and MLMI are explicitly labeled MICCAI workshops and remain in the conference filter. Journal entries use the final issue year when available, retaining an earlier online year in the metadata. No pending DOI or page range is invented for the accepted MLCN 2026 paper.
+
 Optional additions awaiting the owner: supervisor and laboratory, UCL host, individual publication code repositories, and additional publications. These have not been guessed or displayed as placeholders.
 
 Content verified and prepared on 12 November 2026.
